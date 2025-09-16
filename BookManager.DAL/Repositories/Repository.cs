@@ -24,7 +24,7 @@ namespace BookManager.DAL.Repositories
         }
 
         public void Update(T entity) {
-           _dbSet.Update(entity);
+            _dbSet.Update(entity);
         }
 
         public void Delete(int id) { 
