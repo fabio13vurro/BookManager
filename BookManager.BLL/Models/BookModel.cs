@@ -17,5 +17,6 @@ namespace BookManager.BLL.Models
         public ICollection<AuthorModel> Authors { get; } = new List<AuthorModel>();
 
         public ICollection<CategoryModel> Categories { get; } = new List<CategoryModel>();
+
     }
 }

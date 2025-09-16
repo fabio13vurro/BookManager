@@ -12,7 +12,7 @@ namespace BookManager.DAL.Interfaces
 
         IEnumerable<T> GetAll();
 
-        void Insert(T entity);
+        void Add(T entity);
 
         void Update (T entity);
 

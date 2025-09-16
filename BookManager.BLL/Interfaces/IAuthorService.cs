@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BookManager.BLL.Interfaces
 {
-    public interface IBookService : IService<BookModel>
+    public interface IAuthorService : IService<AuthorModel>
     {
     }
 }

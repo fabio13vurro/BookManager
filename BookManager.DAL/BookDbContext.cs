@@ -15,11 +15,14 @@ namespace BookManager.DAL
         public DbSet<Author> Authors { get; set; }
 
         public DbSet<Category> Categories { get; set; }
+
+        /*
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
            
         }
+        */
     }
 }

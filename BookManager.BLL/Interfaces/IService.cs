@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace BookManager.BLL.Interfaces
 {
-    public interface IService <T, K> where T : class where K : class
+    public interface IService<Model> where Model : class
     {
-
+        
+        void Add(Model entity);
+        void Update(Model entity);
+        void Delete(int id);
+        IEnumerable<Model> GetAll();
+        Model GetById(int id);
+        void SaveChanges();
     }
 }

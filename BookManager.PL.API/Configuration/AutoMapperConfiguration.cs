@@ -9,6 +9,8 @@ namespace BookManager.PL.API.Configuration
         public AutoMapperConfiguration()
         {
             CreateMap<Author, AuthorModel>().ReverseMap();
+            CreateMap<Book, BookModel>().ReverseMap();
+            CreateMap<Category, CategoryModel>().ReverseMap();
         }
     }
 }

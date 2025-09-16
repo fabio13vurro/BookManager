@@ -11,10 +11,12 @@ using System.Threading.Tasks;
 
 namespace BookManager.BLL.Services
 {
-    public class BookService : Service<Book, BookModel>, IBookService
+    public class AuthorService : Service<Author, AuthorModel>, IAuthorService
     {
-        public BookService(IMapper mapper, IRepository<Book> Repository) : base(mapper, Repository)
-        { }
+        private readonly IMapper _mapper;
+        private readonly IAuthorRepository _authorRepository;
 
+        public AuthorService(IMapper mapper, IRepository<Author> repository) : base(mapper, repository)
+        { }
     }
 }
